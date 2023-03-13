@@ -70,3 +70,15 @@ $(document).on("mouseleave",".gnb ul li",function(){
 	$("header h1 img.on").hide();
 	$("header h1 img.off").show();
 });
+
+// 연혁
+$(document).on("click" , ".history-tab a" , function(){
+	var paret = $(this).parent();
+	var index = paret.index();
+	var box = $(".history-content .content-box");
+
+	paret.addClass("active");
+	paret.siblings().removeClass("active");
+	box.eq(index).addClass("active");
+	box.eq(index).siblings().removeClass("active");
+});
