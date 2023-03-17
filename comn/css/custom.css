@@ -886,8 +886,12 @@ header .header-main .box .main-list ul li.swiper-slide-next a time:before {backg
 .sub-table table tbody tr td a {font-size:17px; color:#555;}
 .sub-table table tbody tr td a:hover {text-decoration:underline;}
 .sub-table table tbody tr td a.mail {line-height:1; display:inline-block; font-size:0; width:22px; height:18px; background:url('../img/icon_mail.png') no-repeat center / cover;}
+.sub-table table tbody tr td a.mail:after {display:none !important;}
+.sub-table table tbody tr td.mail:after {display:none !important;}
 .sub-table table tbody tr td.mail {position:relative;}
 .sub-table table tbody tr td.mail a {position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);}
+.sub-table .table {display:none;}
+.sub-table .table.active {display:block;}
 .sub-table.fixed {overflow-x:auto; white-space:nowrap;}
 .sub-table.fixed table {table-layout:fixed;}
 .sub-table.fixed table tbody tr td {white-space:break-spaces;}

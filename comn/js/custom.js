@@ -82,3 +82,13 @@ $(document).on("click" , ".history-tab a" , function(){
 	box.eq(index).addClass("active");
 	box.eq(index).siblings().removeClass("active");
 });
+
+function common(idx){
+	var paret = $(".sub-main-category li").eq(idx);
+	var box = $(".sub-table .table");
+
+	paret.addClass("active");
+	paret.siblings().removeClass("active");
+	box.eq(idx).addClass("active");
+	box.eq(idx).siblings().removeClass("active");
+}
